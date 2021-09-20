@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PeachPuff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ListOfParks"
+    tools:showIn="@layout/activity_list_of_parks">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listViewParks"
+            android:layout_width="fill_parent"
+            android:layout_height="700dp"
+            android:layout_gravity="fill_vertical"
+            android:divider="@color/Black"
+            android:dividerHeight="1dp"
+            android:foregroundGravity="fill_vertical"
+            android:listSelector="@color/Peru"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+        </ListView>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
